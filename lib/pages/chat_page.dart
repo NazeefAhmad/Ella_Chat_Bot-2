@@ -12,7 +12,7 @@ class ChatPage extends StatefulWidget {
 
 class _ChatPageState extends State<ChatPage> {
   final _openAI = OpenAI.instance.build(
-    token: "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",
+    token: "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",
     baseOption: HttpSetup(
       receiveTimeout: const Duration(
         seconds: 20,
@@ -36,24 +36,9 @@ class _ChatPageState extends State<ChatPage> {
       backgroundColor: Colors.black87,
 
       appBar: AppBar(
-        backgroundColor: const Color.fromRGBO(
-          16,
-          0,
-          21,
-          1.0,
-        ),
-        title: const Text(
+backgroundColor: colors.Transparent,
 
-          'Ella',
-          style: TextStyle(
-            fontSize: 26,
-            fontWeight: FontWeight.w400,
-            fontStyle: FontStyle.italic,
-            color: Colors.white,
-
-          ),
-        ),
-      ),
+),
       body: DashChat(
 
 
